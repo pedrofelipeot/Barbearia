@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c50303;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+ul li a {
+    font-family: "Fira Sans", sans-serif;
+    text-decoration: none;
+    padding: 20px 60px;
+    color: rgb(255, 239, 209);
+    display: block;
+    transition: transform 0.8s;
+    position: relative;
+}
+
+ul li a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+ul:hover li a {
+    opacity: 0.5;
+}
+
+ul li a:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    color: #c50303;
+}
+
+ul li a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+    z-index: -1;
+}
+
+div#fundo {
+    position: relative;
+    top: 60px;
+    width: 100%;
+    height: 100vh;
+}
+
+div#fundo::after {
+    height: 100vh;
+    content: "";
+    position: absolute;
+    top: -55px;
+    left: -2px;
+    right: 0;
+    background: url(../Imagens/empregos-em-papel-de-barbeiro-vintage-e-conceito-de-carreira.jpg) no-repeat center center;
+    background-size: cover;
+    filter: blur(2px);
+   
+    z-index: -1;
+}
+
+section#apresentacao {
+    color: white;
+    margin: auto;
+    text-align: center;
+    width: 600px;
+}
+
+p, #P-Home {
+    font-family: "Fira Sans", sans-serif;
+}
+
+#P-Home {
+    line-height: 25px;
+}
+
+h1 {
+    font-family: "Poetsen One", sans-serif;
+    text-align: center;
+}
+
+#h1Home {
+    margin-bottom: 20px;
+}
+
+h1.topicos {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    background: radial-gradient(circle, rgb(255, 0, 0), #fffefe);
+    padding: 5px;
+}
+
+img#logo {
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+}
+
+img.imgServiços {
+    width: 100px;
+    height: 130px;
+}
+
+div#centralizar-cortes {
+    display: flex;
+    justify-content: center;
+}
+
+section.section-serviços {
+    display: flex;
+    justify-content: space-around;
+    width: 85%;
+    flex-wrap: wrap;
+}
+
+div.serviços {
+    display: inline-flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-items: center;
+    box-shadow: 0 0 8px rgb(0, 0, 0, 0.582);
+    width: 250px;
+    border: 3px solid #c50303;
+}
+
+div.serviços:last-child {
+    margin-bottom: 0;
+}
+
+p.legendaCortesDireita, p.legendaCortesEsquerda {
+    text-align: center;
+    line-height: 30px;
+    text-align: justify;
+}
+
+p.legendaCortesDireita {
+    padding-right: 20px;
+}
+
+p.legendaCortesEsquerda {
+    padding-left: 20px;
+}
+
+img.imgcabelos {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.582);
+    width: 400px;
+    height: 200px;
+}
+
+section.cortesDireita, section.cortesEsquerda {
+    display: flex;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.486);
+    margin-bottom: 60px;
+    justify-content: flex-end;
+    background-image: linear-gradient(to left, #FFCCCC, white);
+}
+
+section.cortesEsquerda {
+    justify-content: flex-start;
+    background-image: linear-gradient(to right, #FFCCCC, white);
+}
+
+div.divDireita, div.divEsquerda {
+    width: 65%;
+}
+
+h2.tituloCortes, h2.h2-serviços {
+    text-align: center;
+}
+
+section.cortesDireita .conteudo, section.cortesEsquerda .conteudo {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+div.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+div.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+div.footer-section h3 {
+    border-bottom: 1px solid #555;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+div.footer-section p, div.footer-section a {
+    margin: 5px 0;
+    color: #fff;
+}
+
+div.footer-section a {
+    text-decoration: none;
+}
+
+div.footer-section a:hover {
+    text-decoration: underline;
+}
+
+img.social-icon {
+    width: 24px;
+    height: 24px;
+    margin: 5px;
+}
+
+div.footer-bottom {
+    border-top: 1px solid #555;
+    padding-top: 10px;
+    margin-top: 20px;
+}
