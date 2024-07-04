@@ -6,10 +6,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+h1.h1-efeito-home, .logo-efeito-home, p.p-efeito-home, .h1-efeito, .efeitoEsquerda, .efeitoDireita,.footer-efeito{
+    visibility: hidden;
+}
+#servicos, #cortes, #funcionamento, #home {
+    transition: 2s linear ease-in-out;
+}
 
 body {
     width: 100%;
     height: 100vh;
+    overflow-x: hidden;
 }
 
 header nav {
@@ -80,13 +87,11 @@ div#fundo::after {
     height: 100vh;
     content: "";
     position: absolute;
-    top: -55px;
+    top: -30px;
     left: -2px;
     right: 0;
-    background: url(../Imagens/empregos-em-papel-de-barbeiro-vintage-e-conceito-de-carreira.jpg) no-repeat center center;
+    background: url(../Imagens/fundo.jpg) no-repeat center center;
     background-size: cover;
-    filter: blur(2px);
-   
     z-index: -1;
 }
 
@@ -198,7 +203,9 @@ div.divDireita, div.divEsquerda {
 h2.tituloCortes, h2.h2-serviços {
     text-align: center;
 }
-
+h2.tituloCortes{
+    margin-top: 20px;
+}
 section.cortesDireita .conteudo, section.cortesEsquerda .conteudo {
     display: flex;
     align-items: center;
