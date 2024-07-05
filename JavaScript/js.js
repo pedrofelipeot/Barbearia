@@ -64,7 +64,7 @@ revelar.reveal('section.efeitoDireita',
 revelar.reveal('footer.footer-efeito',
 {
     duration:1500,
-    distance:'30px',
+    opacity:0,
     delay:1000,
     reset: false
 })
