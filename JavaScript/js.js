@@ -1,5 +1,4 @@
 window.revelar = ScrollReveal({reset:true})
-
 //Topo do site
 
 

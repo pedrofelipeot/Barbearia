@@ -6,19 +6,18 @@
     padding: 0;
     box-sizing: border-box;
 }
-h1.h1-efeito-home, .logo-efeito-home, p.p-efeito-home, .h1-efeito, .efeitoEsquerda, .efeitoDireita,.footer-efeito{
-    visibility: hidden;
+html{
+    scroll-behavior: smooth;
 }
-#servicos, #cortes, #funcionamento, #home {
-    transition: 2s linear ease-in-out;
-}
-
 body {
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
 }
 
+h1.h1-efeito-home, .logo-efeito-home, p.p-efeito-home, .h1-efeito, .efeitoEsquerda, .efeitoDireita,.footer-efeito{
+    visibility: hidden;
+}
 header nav {
     display: flex;
     align-items: center;
@@ -120,6 +119,7 @@ h1 {
 }
 
 h1.topicos {
+    
     margin-top: 150px;
     margin-bottom: 150px;
     background: radial-gradient(circle, rgb(255, 0, 0), #fffefe);
