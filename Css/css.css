@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -152,7 +152,7 @@ section.section-serviços {
 }
 
 div.serviços {
-    width: 250px;
+    width: 260px;
     border: 1px #ff0000 solid;
     padding: 20px;
     text-align: center;
@@ -211,7 +211,9 @@ section.cortesEsquerda {
 div.divDireita, div.divEsquerda {
     width: 65%;
 }
-
+h2{
+    font-family: "Lora", serif;
+}
 h2.tituloCortes, h2.h2-serviços {
     text-align: center;
 }
@@ -233,7 +235,6 @@ footer {
 
 div.footer-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
     padding: 20px;
@@ -258,13 +259,6 @@ div.footer-section p, div.footer-section a {
     color: #fff;
 }
 
-div.footer-section a {
-    text-decoration: none;
-}
-
-div.footer-section a:hover {
-    text-decoration: underline;
-}
 
 img.social-icon {
     width: 24px;
