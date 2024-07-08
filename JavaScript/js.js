@@ -43,20 +43,20 @@ revelar.reveal('.h1-efeito',
 
 revelar.reveal('section.efeitoEsquerda',
 {
-    duration:1200,
+    duration:1000,
     distance:'100px',
     origin:'left',
     delay:500,
-    viewFactor: 0.5,
+    viewFactor: 0.3,
     reset: false
 })
 revelar.reveal('section.efeitoDireita',
 {
-    duration:1200,
+    duration:1000,
     distance:'100px',
     origin:'right',
     delay:500,
-    viewFactor: 0.5,
+    viewFactor: 0.3,
     reset: false
 })
 

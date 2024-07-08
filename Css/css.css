@@ -160,6 +160,7 @@ div.serviços {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.452);
     transition: transform 0.3s ease-in-out;
+    align-content: space-around;
 }
 
 .serviços:hover {
@@ -270,4 +271,37 @@ div.footer-bottom {
     border-top: 1px solid #555;
     padding-top: 10px;
     margin-top: 20px;
+}
+@media screen and (max-width: 1115px) {
+    .menu {
+        display: none;
+    }
+    div#fundo{
+        background-size: cover;
+        background-position: center center;
+        height: 100vh;
+        position: relative;
+        top: -10px;
+    }
+    section#apresentacao{
+        width: 300px;
+        font-size: 15px;
+    }
+    img#logo{
+        width: 200px;
+        height: 200px;
+    }
+    h1.topicos{
+        margin-top: 50px;
+        margin-bottom: 90px;
+    }
+    div.serviços{
+        width: 150px;
+    }
+    .h2-serviços{
+        font-size: 20px;
+    }
+    img.imgServiços{
+        height: 130px;
+    }
 }
