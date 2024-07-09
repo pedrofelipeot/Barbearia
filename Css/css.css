@@ -196,7 +196,7 @@ img.imgcabelos {
     height: 200px;
 }
 
-section.cortesDireita, section.cortesEsquerda {
+section.cortesDireita{
     display: flex;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.486);
     margin-bottom: 60px;
@@ -205,8 +205,11 @@ section.cortesDireita, section.cortesEsquerda {
 }
 
 section.cortesEsquerda {
+    display: flex;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.486);
+    margin-bottom: 60px;
     justify-content: flex-start;
-    background-image: linear-gradient(to right, #FFCCCC, white);
+    background-image: linear-gradient(to left, #FFCCCC, white);
 }
 
 div.divDireita, div.divEsquerda {
@@ -277,12 +280,11 @@ div.footer-bottom {
         display: none;
     }
     div#fundo{
-        background-size: cover;
-        background-position: center center;
-        height: 100vh;
         position: relative;
         top: -10px;
+       
     }
+    
     section#apresentacao{
         width: 300px;
         font-size: 15px;
@@ -292,6 +294,7 @@ div.footer-bottom {
         height: 200px;
     }
     h1.topicos{
+        font-size: 25px;
         margin-top: 50px;
         margin-bottom: 90px;
     }
@@ -301,7 +304,49 @@ div.footer-bottom {
     .h2-serviços{
         font-size: 20px;
     }
-    img.imgServiços{
-        height: 130px;
+    
+    div.divDireita, div.divEsquerda {
+        width: 100%;
     }
+    
+    p.legendaCortesDireita, p.legendaCortesEsquerda{
+        padding: 0 20px;
+        width: 100%;
+        line-height: normal;
+        font-size: 12px;
+    }
+    div.conteudo{
+        display: block;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    img.imgcabelos{
+        margin-bottom: 30px;
+        order: 1;
+        width: 250px;
+        height: 150px;
+    }
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+    }
+    .footer-container{
+        height: 350px;
+    }
+    
+    div.footer-container {
+        flex-wrap: wrap; 
+        padding: 0;
+    }
+    div.footer-section h3 {
+        border-bottom: 0;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        border-top: 1px solid #555;
+        padding-top: 10px;
+        margin-top: 10px;
+    }
+    
 }
