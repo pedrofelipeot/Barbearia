@@ -87,7 +87,7 @@ div#fundo::after {
     top: -30px;
     left: -2px;
     right: 0;
-    background: url(../Imagens/fundo.jpg) no-repeat center center;
+    background: url(../Imagens/fundo1.jpg) no-repeat center center;
     background-size: cover;
     z-index: -1;
 }
@@ -209,7 +209,7 @@ section.cortesEsquerda {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.486);
     margin-bottom: 60px;
     justify-content: flex-start;
-    background-image: linear-gradient(to left, #FFCCCC, white);
+    background-image: linear-gradient(to right, #FFCCCC, white);
 }
 
 div.divDireita, div.divEsquerda {
@@ -275,7 +275,7 @@ div.footer-bottom {
     padding-top: 10px;
     margin-top: 20px;
 }
-@media screen and (max-width: 1115px) {
+@media screen and (max-width: 550px) {
     .menu {
         display: none;
     }
@@ -350,3 +350,43 @@ div.footer-bottom {
     }
     
 }
+@media screen and (min-width: 551px) and (max-width: 1024px) {
+    ul li a{
+        padding: 20px 20px;
+    }
+    section#apresentacao{
+        position: relative;
+        top: 150px;
+        width: 500px;
+        font-size: 20px;
+        
+    }
+    img#logo{
+        width: 300px;
+        height: 300px;
+    }
+    h1.topicos{
+        margin-top: 110px;
+        margin-bottom: 90px;
+    }
+    div.divDireita, div.divEsquerda {
+        width: 100%;
+    }
+    
+    p.legendaCortesDireita, p.legendaCortesEsquerda{
+        padding: 0 20px;
+        width: 100%;
+        line-height: normal;
+        font-size: 16px;
+    }
+    
+    img.imgcabelos{
+        margin-bottom: 30px;
+        order: 1;
+        width: 250px;
+        height: 150px;
+    }
+  
+}
+
+
