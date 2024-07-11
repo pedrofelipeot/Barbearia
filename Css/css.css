@@ -282,7 +282,6 @@ div.footer-bottom {
     div#fundo{
         position: relative;
         top: -10px;
-       
     }
     
     section#apresentacao{
@@ -356,10 +355,13 @@ div.footer-bottom {
     }
     section#apresentacao{
         position: relative;
-        top: 150px;
+        top: 100px;
         width: 500px;
         font-size: 20px;
         
+    }
+    #P-Home{
+      line-height: 35px;
     }
     img#logo{
         width: 300px;
