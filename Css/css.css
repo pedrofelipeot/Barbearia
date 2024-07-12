@@ -94,7 +94,6 @@ div#fundo::after {
 
 section#apresentacao {
     display: block;
-    align-content: space-around;
     justify-content: center;
     color: white;
     margin: auto;
@@ -351,6 +350,7 @@ div.footer-bottom {
     
     section#apresentacao{
         width: 95%;
+        align-content: space-around;
         font-size: 15px;
     }
     img#logo{
