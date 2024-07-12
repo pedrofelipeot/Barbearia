@@ -63,8 +63,8 @@ revelar.reveal('section.efeitoDireita',
 //rodape
 revelar.reveal('footer.footer-efeito',
 {
-    duration:1500,
+    duration:1000,
     opacity:0,
-    delay:1000,
+    delay:300,
     reset: false
 })
